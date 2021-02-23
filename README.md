@@ -37,7 +37,7 @@ a cui è connesso un vettore che scorrendo sceglie la città a cui fa riferiment
 
 ## Sezione relativa agli sviluppi su Amazon AWS
 
-![Amazon AWS](https://www.google.com/url?sa=i&url=https%3A%2F%2Fit.wikipedia.org%2Fwiki%2FAmazon_Web_Services&psig=AOvVaw2jAnO_Cm0AlCvFeblYLwxh&ust=1614165118550000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCPitsubv_-4CFQAAAAAdAAAAABAE)
+![Amazon AWS](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.spindox.it%2Fit%2Fblog%2Ftutto-cloud-serve-ad-aws-interact%2F&psig=AOvVaw0hLuqfJ9_eq5CoIMZbNFJs&ust=1614165256845000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCOiFhqjw_-4CFQAAAAAdAAAAABAJ)
 
 
 
