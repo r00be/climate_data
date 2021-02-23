@@ -1,6 +1,6 @@
 # Sensor data
 
-### Introduzione.
+## Introduzione.
 ```sh
 Questo programma richiama dei dati, che in particolare riguardano contenuto volumetrico dell'acqua, la temperatura del suolo,
 quella ambientale, e l'umidità, dal sito del "Corriere della Sera", che li ha memorizzati e li classifica in base alla città.
@@ -12,9 +12,7 @@ un ID unico che specifica da dove proviene il dato.
 
 Prendiamo una città a nostro piacimento, come Fermo.  
 
-_For more examples and usage, please refer to the [Wiki][wiki]._
-
-## Development setup
+## Membri del gruppo e responsabilità 
 
 Describe how to install all development dependencies and how to run an automated test-suite of some kind. Potentially do this for multiple platforms.
 
