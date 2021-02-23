@@ -22,6 +22,8 @@ a cui è connesso un vettore che scorrendo sceglie la città a cui fa riferiment
 
 ## Membri del gruppo e responsabilità
 
+Elenco di presentazione dei membri che partecipano attivamente alla creazione del programma.
+
 ```sh
 - Contigiani Roberto (rappresentante gruppo): parte dello sviluppo codice e connessione al relativo database;
 - Sgalippa Stefano: parte relativa allo sviluppo del database;
