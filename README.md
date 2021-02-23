@@ -43,11 +43,15 @@ a cui è connesso un vettore che scorrendo sceglie la città a cui fa riferiment
     * ADD: Add `init()`
 * 0.1.1
     * FIX: Crash when calling `baz()` (Thanks @GenerousContributorName!)
+    
 * 0.1.0
+
     * The first proper release
     * CHANGE: Rename `foo()` to `bar()`
+    
 * 0.0.1 (Lun 15 Feb 2021)
-    * Inizio lavoro - Work in progress
+
+    * Inizio lavoro
 
 
 ## Link che hanno aiutato alla realizzazione del progetto
