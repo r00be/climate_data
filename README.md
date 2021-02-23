@@ -13,8 +13,11 @@ un ID unico che specifica da dove proviene il dato.
 Una rapida spiegazione di come funziona il nostro programma e come abbiamo organizzato la lista json.
 
 ```sh
-Prima di iniziare, è opportuno sapere che ogni capoluogo di provincia presente
-nella lista del "Corriere della Sera" è caratterizzato da un codice numerico.
+Prima di iniziare, è opportuno sapere che ogni capoluogo di provincia presente nella lista del "Corriere della Sera" 
+è caratterizzato da un codice numerico. All'interno del nostro programma python abbiamo realizzato una funzione "URL",
+che permette di riuscire a ricavare i dati di quel relativo nodo. Tutto questo è possibile grazie alla funzione "node_code",
+a cui è connesso un vettore che scorrendo sceglie la città a cui fa riferimento il codice. La sintassi della funzione che da come 
+output la città e i suoi relativi dati è la seguente: URL = "https://meteo.corriere.it/meteoapi.php?c=" + str(node_code).
 ```
 
 
