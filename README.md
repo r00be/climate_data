@@ -36,18 +36,23 @@ a cui è connesso un vettore che scorrendo sceglie la città a cui fa riferiment
 
 ## Cronologia delle varie versioni
 
-* 0.2.1
-    * 
+> Un rapido resoconto dei risultati ottenuti fino ad ora.
+
+* 0.2.1 (Mar 23 Feb 2021)
+    * Continuazione redazione file READMI
+    * Prima revisione dei risultati ottenuti
     
-* 0.2.0
-    * 
+* 0.2.0 (Lun 22 Feb 2021)
+    * Continuazione dell'implementazione della funzione lambda al programma in python
+    * Inizio redazione file README
     
-* 0.1.1 (
-    * 
+* 0.1.1 (Gio 18 Feb 2021)
+    * Continuazione del lavoro su python per connettere al database
+    * Sviluppo funzione lambda e tentativi di implementazione in python
     
 * 0.1.0 (Mar 16 Feb 2021)
     * Creazione struttura database con due tabelle
-    * Inizio programmazione file python con lista json delle varie città
+    * Inizio programmazione file python con lista json delle varie città.
     
 * 0.0.1 (Lun 15 Feb 2021)
     * Inizio lavoro, divisione del lavoro ed organizzazione responsabilità
