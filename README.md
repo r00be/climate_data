@@ -1,6 +1,7 @@
 # Progetto
 
-## Introduzione
+> Introduzione
+> 
 ```sh
 Questo programma richiama dei dati, che in particolare riguardano contenuto volumetrico dell'acqua, la temperatura del suolo,
 quella ambientale, e l'umidità, dal sito del "Corriere della Sera", che li ha memorizzati e li classifica in base alla città.
