@@ -23,8 +23,9 @@ a cui è connesso un vettore che scorrendo sceglie la città a cui fa riferiment
 ## Membri del gruppo e responsabilità
 
 ```sh
-make install
-npm test
+- Contigiani Roberto (rappresentante gruppo): parte dello sviluppo codice e connessione al relativo database;
+- Sgalippa Stefano: parte relativa allo sviluppo del database;
+- Capparelli Claudio: parte relativa alla creazione e gestione della pagina GitHub, creazione del file README.md
 ```
 
 ## Release History
