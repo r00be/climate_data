@@ -2,7 +2,6 @@
 
 > Introduzione
 
-
 ```sh
 Questo programma richiama dei dati, che in particolare riguardano contenuto volumetrico dell'acqua, la temperatura del suolo,
 quella ambientale, e l'umidità, dal sito del "Corriere della Sera", che li ha memorizzati e li classifica in base alla città.
@@ -13,7 +12,6 @@ un ID unico che specifica da dove proviene il dato.
 ## Esempio di utilizzo
 
 > Una rapida spiegazione di come funziona il nostro programma.
-
 
 ```sh
 Prima di iniziare, è opportuno sapere che ogni capoluogo di provincia presente nella lista del "Corriere della Sera" 
