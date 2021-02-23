@@ -34,25 +34,24 @@ a cui è connesso un vettore che scorrendo sceglie la città a cui fa riferiment
 - Capparelli Claudio: parte relativa alla creazione e gestione della pagina GitHub, creazione del file README.md
 ```
 
-## Cronologia delle varie release
+## Cronologia delle varie versioni
 
 * 0.2.1
-    * CHANGE: Update docs (module code remains unchanged)
-* 0.2.0
-    * CHANGE: Remove `setDefaultXYZ()`
-    * ADD: Add `init()`
-* 0.1.1
-    * FIX: Crash when calling `baz()` (Thanks @GenerousContributorName!)
+    * 
     
-* 0.1.0
-
-    * The first proper release
-    * CHANGE: Rename `foo()` to `bar()`
+* 0.2.0
+    * 
+    
+* 0.1.1 (
+    * 
+    
+* 0.1.0 (Mar 16 Feb 2021)
+    * Creazione struttura database con due tabelle
+    * Inizio programmazione file python con lista json delle varie città
     
 * 0.0.1 (Lun 15 Feb 2021)
-
-    * Inizio lavoro
-
+    * Inizio lavoro, divisione del lavoro ed organizzazione responsabilità
+    * Creazione dei vari account: postman, github, aws.
 
 ## Link che hanno aiutato alla realizzazione del progetto
 
