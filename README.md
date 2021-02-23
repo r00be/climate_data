@@ -10,7 +10,13 @@ un ID unico che specifica da dove proviene il dato.
 
 ## Esempio di utilizzo
 
-Prendiamo una città a nostro piacimento, come Fermo.  
+Una rapida spiegazione di come funziona il nostro programma e come abbiamo organizzato la lista json.
+
+```sh
+Prima di iniziare, è opportuno sapere che ogni capoluogo di provincia presente
+nella lista del "Corriere della Sera" è caratterizzato da un codice numerico.
+```
+
 
 ## Membri del gruppo e responsabilità 
 
