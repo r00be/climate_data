@@ -1,6 +1,5 @@
 # Progetto
 
-
 > Introduzione
 
 
@@ -12,7 +11,6 @@ un ID unico che specifica da dove proviene il dato.
 ```
 
 ## Esempio di utilizzo
-
 
 > Una rapida spiegazione di come funziona il nostro programma.
 
@@ -26,7 +24,6 @@ a cui è connesso un vettore che scorrendo sceglie la città a cui fa riferiment
 
 
 ## Membri del gruppo e responsabilità
-
 
 > Elenco di presentazione dei membri che partecipano attivamente alla creazione del programma.
 
@@ -49,8 +46,8 @@ a cui è connesso un vettore che scorrendo sceglie la città a cui fa riferiment
 * 0.1.0
     * The first proper release
     * CHANGE: Rename `foo()` to `bar()`
-* 0.0.1
-    * Work in progress
+* 0.0.1 (Lun 15 Feb 2021)
+    * Inizio lavoro - Work in progress
 
 
 ## Link che hanno aiutato alla realizzazione del progetto
