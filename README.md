@@ -1,6 +1,6 @@
-# Sensor data
+# Progetto
 
-## Introduzione.
+## Introduzione
 ```sh
 Questo programma richiama dei dati, che in particolare riguardano contenuto volumetrico dell'acqua, la temperatura del suolo,
 quella ambientale, e l'umidità, dal sito del "Corriere della Sera", che li ha memorizzati e li classifica in base alla città.
@@ -10,7 +10,7 @@ un ID unico che specifica da dove proviene il dato.
 
 ## Esempio di utilizzo
 
-Una rapida spiegazione di come funziona il nostro programma.
+> Una rapida spiegazione di come funziona il nostro programma.
 
 ```sh
 Prima di iniziare, è opportuno sapere che ogni capoluogo di provincia presente nella lista del "Corriere della Sera" 
@@ -22,7 +22,7 @@ a cui è connesso un vettore che scorrendo sceglie la città a cui fa riferiment
 
 ## Membri del gruppo e responsabilità
 
-Elenco di presentazione dei membri che partecipano attivamente alla creazione del programma.
+> Elenco di presentazione dei membri che partecipano attivamente alla creazione del programma.
 
 ```sh
 - Contigiani Roberto (rappresentante gruppo): parte dello sviluppo codice e connessione al relativo database;
