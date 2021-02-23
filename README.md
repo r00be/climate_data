@@ -34,9 +34,17 @@ a cui è connesso un vettore che scorrendo sceglie la città a cui fa riferiment
 - Capparelli Claudio: parte relativa alla creazione e gestione della pagina GitHub, creazione del file README.md
 ```
 
+
+## Sezione relativa agli sviluppi su Amazon AWS
+
+![Amazon AWS](https://www.google.com/url?sa=i&url=https%3A%2F%2Fit.wikipedia.org%2Fwiki%2FAmazon_Web_Services&psig=AOvVaw2jAnO_Cm0AlCvFeblYLwxh&ust=1614165118550000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCPitsubv_-4CFQAAAAAdAAAAABAE)
+
+
+
 ## Cronologia delle varie versioni
 
 > Un rapido resoconto dei risultati ottenuti fino ad ora.
+
 
 * 0.2.1 (Mar 23 Feb 2021)
     * Continuazione redazione file READMI
