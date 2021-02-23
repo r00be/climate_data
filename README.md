@@ -1,6 +1,6 @@
 # Sensor data
 
-Introduzione.
+### Introduzione.
 ```sh
 Questo programma richiama dei dati, che in particolare riguardano contenuto volumetrico dell'acqua, la temperatura del suolo,
 quella ambientale, e l'umidità, dal sito del "Corriere della Sera", che li ha memorizzati e li classifica in base alla città.
@@ -8,23 +8,9 @@ Il programma richiama anche la posizione geografica al momento della cattura dei
 un ID unico che specifica da dove proviene il dato.
 ```
 
-## Installation
+## Esempio di utilizzo
 
-OS X & Linux:
-
-```sh
-npm install my-crazy-module --save
-```
-
-Windows:
-
-```sh
-edit autoexec.bat
-```
-
-## Usage example
-
-A few motivating and useful examples of how your product can be used. Spice this up with code blocks and potentially more screenshots.
+Prendiamo una città a nostro piacimento, come Fermo.  
 
 _For more examples and usage, please refer to the [Wiki][wiki]._
 
