@@ -29,9 +29,9 @@ a cui è connesso un vettore che scorrendo sceglie la città a cui fa riferiment
 
 
 ```sh
-- Contigiani Roberto (rappresentante gruppo): parte dello sviluppo codice e connessione al relativo database;
-- Sgalippa Stefano: parte relativa allo sviluppo del database;
-- Capparelli Claudio: parte relativa alla creazione e gestione della pagina GitHub, creazione del file README.md
+- **Contigiani Roberto** (_referente gruppo_): parte dello sviluppo codice e connessione al relativo database;
+- **Sgalippa Stefano**: parte relativa allo sviluppo del database;
+- **Capparelli Claudio**: parte relativa alla creazione e gestione della pagina GitHub, creazione del file README.md
 ```
 
 
