@@ -32,7 +32,7 @@ def lambda_handler(event, context):
     acquisition_time = data["acquisition_time"]
     
     
-    #3. insert query to the sensor_values table of the data taken from the nodes
+    #3. Inserting the data taken from the nodes into the database
     query = "INSERT INTO sensor_values(sensor_id, volumetric_water_content, temperature_enviroment, temperature_soil, percentage_humidity, acquisition_time) VALUES (%s, %s, %s, %s, %s, %s);"
     query_request = (sensor_id, volumetric_water_content, temperature_enviroment, temperature_soil, percentage_humidity, acquisition_time)
     cur.execute(query, query_request)
