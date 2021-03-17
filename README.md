@@ -44,7 +44,7 @@ I servizi utilizzati da AWS sono stati:
 ```sh
 
 API Gateway: https://console.aws.amazon.com/apigateway/home?region=us-east-1#/apis/gcm2ijz2qa/resources/uil15qngw1
-Alexa Developer: https://developer.amazon.com/alexa/console/ask/build/custom/amzn1.ask.skill.9a0eacce-aebe-4054-9a97-7aedf882dd66/development/it_IT/dashboard
+Alexa Developer: https://developer.amazon.com/it-IT/alexa
 
 ```
 
@@ -74,7 +74,15 @@ query = "SELECT MIN(volumetric_water_content), MAX(volumetric_water_content), AV
     conn.commit()
 
 ```
-## Spiegate il ruolo del HTTP 
+## Spiegate il ruolo del HTTP
+```sh
+Le HTTP request sono fondamentali per l'interazione fra l'API e il codice.
+La request contiene il metodo utilizzato per la richiesta, la URL associata e l'header e il payload; la prima request utilizza il metodo POST per inviare il JSON contenente i dati dei nodi, all'API perciò il payload dovrà contenere la struttura del JSON che dovrà essere compilata dalla lambda function.
+Una volta inseriti i dati all'interno del database, verrà effettuata un'altra richiesta da Alexa che richiederà il minimo, il massimo o la media di un dato in base a due parametri (slot), "field" e "n minuti".
+La request utilizzerà stavolta il metodo GET passando nel payload questi due parametri e la lambda function risponderà restituendo il JSON con tutte le statistiche di quel dato.
+
+```
+
 ## Stato di avanzamento del progetto e sviluppi futuri
 > Un rapido resoconto dei risultati ottenuti fino ad ora.
 
