@@ -50,11 +50,12 @@ Alexa Developer: https://developer.amazon.com/alexa/console/ask/build/custom/amz
 
 ## Simulazione in Python dei dati necessari all'applicazione
 ```sh
-<img src="1st_json.PNG" > ![Simulazione Python](1st_json.PNG)
+![Simulazione Python](1st_json.PNG)
 ```
 ## Struttura del database: schema ER e schema logico, eventuali vincoli di integrità referenziale
 ## Lambda function per il data injection e per l’elaborazione dei dati nel database
 ```sh
+
 Una prima lambda function è necessaria per inserire i dati presenti nei diversi nodi ed inserirli all'interno del database attraverso una query.
 
 query = "INSERT INTO sensor_values(sensor_id, volumetric_water_content, temperature_enviroment, temperature_soil, percentage_humidity, acquisition_time) VALUES (%s, %s, %s, %s, %s, %s);"
@@ -65,7 +66,7 @@ query = "INSERT INTO sensor_values(sensor_id, volumetric_water_content, temperat
     conn.close()
 
 
-Viene utilizzata una lambda function in linguaggio Python che dopo essersi connessa al database fa una query dei dati e che ne estrae il minimo, il massimo e la media.
+Viene utilizzata un'altra lambda function in linguaggio Python che dopo essersi connessa al database fa una query dei dati e che ne estrae il minimo, il massimo e la media.
 
 query = "SELECT MIN(volumetric_water_content), MAX(volumetric_water_content), AVG(volumetric_water_content) FROM sensor_values INNER JOIN sensor_data ON sensor_values.sensor_id = sensor_data.sensor_id WHERE sensor_data.field = "+ str(field) +" AND sensor_values.acquisition_time BETWEEN "+ str(minutes) +" AND " + str(time_now) +" ;"
     cur.execute(query)
