@@ -50,7 +50,7 @@ Alexa Developer: https://developer.amazon.com/alexa/console/ask/build/custom/amz
 
 ## Simulazione in Python dei dati necessari all'applicazione
 ```sh
-<img src="1st_json.PNG" > ![Simulazione Python](https://github.com/r00be/climate_data/blob/main/1st_json.PNG?raw=true)
+<img src="1st_json.PNG" > ![Simulazione Python](1st_json.PNG)
 ```
 ## Struttura del database: schema ER e schema logico, eventuali vincoli di integrità referenziale
 ## Lambda function per il data injection e per l’elaborazione dei dati nel database
