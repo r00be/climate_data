@@ -3,26 +3,28 @@
 ## Obiettivi del progetto
 > Introduzione
 
-```sh
+
 Si vuole simulare un acquisizione di dati da dei sensori di temperatura sparsi in 3 campi diversi.
 Utilizzando dei servizi di cloud computing, questi dati vengono inseriti all'interno di un database e mediante Alexa si chiede di estrapolare un dato 
-```
+
 
 > Una rapida spiegazione di come funziona il nostro programma.
 
-```sh
-Un codice in python genera in maniera fittizia dei dati quali contenuto volumetrico d'acqua, temperatura ambientale, temperatura del suolo e umidità, ma che siano il più possibile realistici e credibili; il codice genera i dati ogni x minuti a ciclo continuo.
-Queste informazioni vengono poi inserite nel database tramite l'API Gateway che richiama la Lambda function apposita che inserisce i dati. 
 
-```
+Un codice in python genera in maniera fittizia dei dati quali contenuto volumetrico d'acqua, 
+temperatura ambientale, temperatura del suolo e umidità, ma che siano il più possibile realistici e credibili; 
+il codice genera i dati ogni x minuti a ciclo continuo.
+Queste informazioni vengono poi inserite nel database tramite l'API Gateway 
+che richiama la Lambda function apposita che inserisce i dati. 
+
 
 ## Architettura (componenti software/hardware e loro interazione)
 ```sh
 Per la realizzazione del progetto è stato utilizzato:
--DBeaver:è uno strumento di amministrazione del database, che ci permette di gestire il db creato da AWS
--Visual Studio Code - Python(3.9.1): in python viene scritto il codice che genera i dati dei nodi e invia il JSON all'API Gateway
--Alexa Developer: mediante Alexa viene fatta una richiesta e la Lambda restituisce il risultato
--AWS (Amazon Web Services): offre dei servizi di cloud computing, quelli utilizzati sono:
+-**DBeaver**:è uno strumento di amministrazione del database, che ci permette di gestire il db creato da AWS
+-**Visual Studio Code - Python(3.9.1)**: in python viene scritto il codice che genera i dati dei nodi e invia il JSON all'API Gateway
+-**Alexa Developer**: mediante Alexa viene fatta una richiesta e la Lambda restituisce il risultato
+-**AWS (Amazon Web Services)**: offre dei servizi di cloud computing, quelli utilizzati sono:
 
   -API Gateway: questa interfaccia richiama le Lambda function in base alle HTTP request.
 
@@ -44,9 +46,9 @@ Alexa Developer: https://developer.amazon.com/it-IT/alexa
 ```
 
 ## Simulazione in Python dei dati necessari all'applicazione
-```sh
+
 ![](images/1st_json.PNG)
-```
+
 ## Struttura del database: schema ER e schema logico, eventuali vincoli di integrità referenziale
 ## Lambda function per il data injection e per l’elaborazione dei dati nel database
 ```sh
