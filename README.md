@@ -19,22 +19,22 @@ che richiama la Lambda function apposita che inserisce i dati.
 
 
 ## Architettura (componenti software/hardware e loro interazione)
-```sh
+
 Per la realizzazione del progetto è stato utilizzato:
-**DBeaver**:è uno strumento di amministrazione del database, che ci permette di gestire il db creato da AWS
-**Visual Studio Code - Python(3.9.1)**: in python viene scritto il codice che genera i dati dei nodi e invia il JSON all'API Gateway
-**Alexa Developer**: mediante Alexa viene fatta una richiesta e la Lambda restituisce il risultato
-**AWS (Amazon Web Services)**: offre dei servizi di cloud computing, quelli utilizzati sono:
+- **DBeaver**: è uno strumento di amministrazione del database, che ci permette di gestire il db creato da AWS
+- **Visual Studio Code - Python(3.9.1)**: in python viene scritto il codice che genera i dati dei nodi e invia il JSON all'API Gateway
+- **Alexa Developer**: mediante Alexa viene fatta una richiesta e la Lambda restituisce il risultato
+- **AWS (Amazon Web Services)**: offre dei servizi di cloud computing, quelli utilizzati sono:
 
-  API Gateway: questa interfaccia richiama le Lambda function in base alle HTTP request.
+  - API Gateway: questa interfaccia richiama le Lambda function in base alle HTTP request.
 
-  Lambda function:    vengono utilizzate due lambda function, entrambe in linguaggio python, ma con metodi diversi:
+  - Lambda function:    vengono utilizzate due lambda function, entrambe in linguaggio python, ma con metodi diversi:
         1. metodo POST: si connette al database
         2. metodo GET:  esetrapola dei dati dal database e li restituisce in JSON
 
-  RDS (Relational Database Service): viene creato un database PostgreSQL che, una volta configurato, viene gestito da DBeaver 
+  - RDS (Relational Database Service): viene creato un database PostgreSQL che, una volta configurato, viene gestito da DBeaver 
 
-```
+
 
 
 ### Elenco dei tool che utilizzate (non deve essere un tutorial, piuttosto usate link esterni)
@@ -47,31 +47,40 @@ Alexa Developer: https://developer.amazon.com/it-IT/alexa
 
 ## Simulazione in Python dei dati necessari all'applicazione
 
+POST REQUEST
+
+![](images/postrequest.PNG)
+
+Dati json
+
 ![](images/1st_json.PNG)
 
 ## Struttura del database: schema ER e schema logico, eventuali vincoli di integrità referenziale
 ## Lambda function per il data injection e per l’elaborazione dei dati nel database
-```sh
+
+> db-connection
 
 Una prima lambda function è necessaria per inserire i dati presenti nei diversi nodi ed inserirli all'interno del database attraverso una query.
 
+![](images/dbconnection.PNG)
+```sh
 query = "INSERT INTO sensor_values(sensor_id, volumetric_water_content, temperature_enviroment, temperature_soil, percentage_humidity, acquisition_time) VALUES (%s, %s, %s, %s, %s, %s);"
     query_request = (sensor_id, volumetric_water_content, temperature_enviroment, temperature_soil, percentage_humidity, acquisition_time)
     cur.execute(query, query_request)
     conn.commit()
     cur.close()
     conn.close()
-
+```
+> min-max-med
 
 Viene utilizzata un'altra lambda function in linguaggio Python che dopo essersi connessa al database fa una query dei dati e che ne estrae il minimo, il massimo e la media.
-
+```sh
 query = "SELECT MIN(volumetric_water_content), MAX(volumetric_water_content), AVG(volumetric_water_content) FROM sensor_values INNER JOIN sensor_data ON sensor_values.sensor_id = sensor_data.sensor_id WHERE sensor_data.field = "+ str(field) +" AND sensor_values.acquisition_time BETWEEN "+ str(minutes) +" AND " + str(time_now) +" ;"
     cur.execute(query)
     result = cur.fetchall()
     conn.commit()
-
 ```
-## Spiegate il ruolo del HTTP
+## Il ruolo del HTTP
 ```sh
 Le HTTP request sono fondamentali per l'interazione fra l'API e il codice.
 La request contiene il metodo utilizzato per la richiesta, la URL associata e l'header e il payload; la prima request utilizza il metodo POST per inviare il JSON contenente i dati dei nodi, all'API perciò il payload dovrà contenere la struttura del JSON che dovrà essere compilata dalla lambda function.
