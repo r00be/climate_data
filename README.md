@@ -50,6 +50,7 @@ Alexa Developer: https://developer.amazon.com/it-IT/alexa
 POST REQUEST
 
 All'interno del pyload c'è il la stringa json
+
 ![](images/postrequest.PNG)
 
 Dati json
