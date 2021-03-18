@@ -4,38 +4,33 @@
 > Introduzione
 
 ```sh
-Questo programma richiama dei dati, che in particolare riguardano contenuto volumetrico dell'acqua, la temperatura del suolo,
-quella ambientale, e l'umidità, dal sito del "Corriere della Sera", che li ha memorizzati e li classifica in base alla città.
-Il programma richiama anche la posizione geografica al momento della cattura dei dati (latitudine e longitudine), insieme ad
-un ID unico che specifica da dove proviene il dato.
+Si vuole simulare un acquisizione di dati da dei sensori di temperatura sparsi in 3 campi diversi.
+Utilizzando dei servizi di cloud computing, questi dati vengono inseriti all'interno di un database e mediante Alexa si chiede di estrapolare un dato 
 ```
 
 > Una rapida spiegazione di come funziona il nostro programma.
 
 ```sh
-Prima di iniziare, è opportuno sapere che ogni capoluogo di provincia presente nella lista del "Corriere della Sera" 
-è caratterizzato da un codice numerico. All'interno del nostro programma python abbiamo realizzato una funzione "URL",
-che permette di riuscire a ricavare i dati di quel relativo nodo. Tutto questo è possibile grazie alla funzione "node_code",
-a cui è connesso un vettore che scorrendo sceglie la città a cui fa riferimento il codice.
+Un codice in python genera in maniera fittizia dei dati quali contenuto volumetrico d'acqua, temperatura ambientale, temperatura del suolo e umidità, ma che siano il più possibile realistici e credibili; il codice genera i dati ogni x minuti a ciclo continuo.
+Queste informazioni vengono poi inserite nel database tramite l'API Gateway che richiama la Lambda function apposita che inserisce i dati. 
+
 ```
 
 ## Architettura (componenti software/hardware e loro interazione)
 ```sh
 Per la realizzazione del progetto è stato utilizzato:
--AWS (Amazon Web Services): offre servizi di cloud computing.
 -DBeaver:è uno strumento di amministrazione del database, che ci permette di gestire il db creato da AWS
 -Visual Studio Code - Python(3.9.1): in python viene scritto il codice che genera i dati dei nodi e invia il JSON all'API Gateway
 -Alexa Developer: mediante Alexa viene fatta una richiesta e la Lambda restituisce il risultato
+-AWS (Amazon Web Services): offre dei servizi di cloud computing, quelli utilizzati sono:
 
-I servizi utilizzati da AWS sono stati:
--API Gateway: questa interfaccia richiama le Lambda function in base alle HTTP request.
+  -API Gateway: questa interfaccia richiama le Lambda function in base alle HTTP request.
 
--Lambda function:    vengono utilizzate due lambda function, entrambe in linguaggio python, ma con metodi diversi:
-                        1. metodo POST: si connette al database
-                        2. metodo GET:  esetrapola dei dati dal database e li restituisce in JSON
+  -Lambda function:    vengono utilizzate due lambda function, entrambe in linguaggio python, ma con metodi diversi:
+        1. metodo POST: si connette al database
+        2. metodo GET:  esetrapola dei dati dal database e li restituisce in JSON
 
-
--RDS (Relational Database Service): viene creato un database PostgreSQL che, una volta configurato, viene gestito da DBeaver 
+  -RDS (Relational Database Service): viene creato un database PostgreSQL che, una volta configurato, viene gestito da DBeaver 
 
 ```
 
