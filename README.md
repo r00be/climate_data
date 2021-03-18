@@ -45,7 +45,7 @@ Alexa Developer: https://developer.amazon.com/it-IT/alexa
 
 ## Simulazione in Python dei dati necessari all'applicazione
 ```sh
-![Simulazione Python](1st_json.PNG)
+![](images/1st_json.PNG)
 ```
 ## Struttura del database: schema ER e schema logico, eventuali vincoli di integrità referenziale
 ## Lambda function per il data injection e per l’elaborazione dei dati nel database
