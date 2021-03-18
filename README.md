@@ -49,6 +49,7 @@ Alexa Developer: https://developer.amazon.com/it-IT/alexa
 
 POST REQUEST
 
+All'interno del pyload c'è il la stringa json
 ![](images/postrequest.PNG)
 
 Dati json
@@ -56,6 +57,7 @@ Dati json
 ![](images/1st_json.PNG)
 
 ## Struttura del database: schema ER e schema logico, eventuali vincoli di integrità referenziale
+![](images/modello_concettuale.png)
 ## Lambda function per il data injection e per l’elaborazione dei dati nel database
 
 > db-connection
