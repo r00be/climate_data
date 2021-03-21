@@ -66,3 +66,8 @@ class TemperatureIntentHandler(AbstractRequestHandler):
                 # .ask("add a reprompt if you want to keep the session open for the user to respond")
                 .response
         )
+ 
+#at the bottom of the code
+sb = SkillBuilder()    
+
+sb.add_request_handler(TemperatureIntentHandler())
