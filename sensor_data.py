@@ -4,7 +4,7 @@ import json       #allows to work with JSON file
 import datetime as dt
 import time
 
-
+# each row of the field contain the static information of a node (field, sensor_id, longitude, latitude)
 field1 = [[1,100,13.71145248413086,43.158361065027506], 
           [1,101,13.822174072265625,43.12604547425635], 
           [1,102,13.4307861328125,43.16311928246929], 
@@ -21,7 +21,7 @@ field3 = [[3,108,13.1671142578125,43.644025847699496],
           [3,111,13.172607421875,43.51270490464819]]
   
 
-#Genereting data
+# Genereting data
 def sensor_values():
   date = dt.datetime.now()
   epoch_time = time.time()
@@ -44,6 +44,7 @@ def sensor_values():
 
   return list_values
 
+#3. Convert the data in JSON
 def convert_to_json(list_values,i):
   
   x =  { "sensor_id": i[1], 
@@ -57,14 +58,17 @@ def convert_to_json(list_values,i):
 
   return y
 
+# 1. Infinite loop: for each field invokes the functions above
 while True:
 
-  list_json = []
+  list_json = []  #list of JSON 
 
   for i in  field1:
     
-
+    #2. Collect the data generated
     list_values = sensor_values()
+
+    #3. Convert the data in JSON
     dataJson = convert_to_json(list_values,i)
 
     list_json.append(dataJson)
@@ -85,10 +89,11 @@ while True:
 
     list_json.append(dataJson)
 
+  #4. Send the data to the API Gateway
   for i in list_json:
 
     payload = i
-    headers = {'content-type': 'application/json'}
+    headers = {}
     
     try:
 
