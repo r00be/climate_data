@@ -91,6 +91,5 @@ def convert_to_json(result):
     }
 
     y = json.dumps(x) 
-    y = json.loads(y) 
 
     return y
